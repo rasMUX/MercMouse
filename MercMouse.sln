@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MercMouse", "MercMouse\MercMouse.vcxproj", "{E3D1C95A-A772-4CF0-AD01-AED458660C6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3D1C95A-A772-4CF0-AD01-AED458660C6E}.Debug|x64.ActiveCfg = Debug|x64
+		{E3D1C95A-A772-4CF0-AD01-AED458660C6E}.Debug|x64.Build.0 = Debug|x64
+		{E3D1C95A-A772-4CF0-AD01-AED458660C6E}.Release|x64.ActiveCfg = Release|x64
+		{E3D1C95A-A772-4CF0-AD01-AED458660C6E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48B021B0-29FF-4897-8C76-CB1CA885C8D4}
+	EndGlobalSection
+EndGlobal

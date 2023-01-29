@@ -240,7 +240,7 @@ static void Init() {
         OutputDebugStringA("Running!");
 
         while (*Ptr<u64>{ 0x12613 } == nameBytes) {
-            if (*Ptr<u32>{ 0x4A3908 }.offset(offset) && *Ptr<u32>{ 0x4A3914 }.offset(offset) == 0x1) {
+            if (*Ptr<u32>{ 0x695908 }.offset(offset) && *Ptr<u32>{ 0x6958EC }.offset(offset) == 0x1) {
                 float const mouseMoveX = static_cast<float>(mouseRotation * mouseSensitivity * static_cast<double>(x));
                 float const mouseMoveY = static_cast<float>(mouseRotation * mouseSensitivity * invertMouse * static_cast<double>(y));
 

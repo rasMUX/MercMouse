@@ -263,10 +263,12 @@ static void Init() {
                 *scopeInfo.chain<float, 0x50>() += mouseMoveY * static_cast<float>(zoomSensitivity);
 
                 //Turrets?
-                auto const turret = Ptr<Ptr<Ptr<Struct, 0xC>, 0x10>>{ 0x501A70 }.offset(offset);
-                if (auto* const enabled = turret.chain<bool, 0x2A3, true>().followSafe(); enabled && *enabled) {
-                    *turret.chain<float, 0x214>() += mouseMoveX;
-                    *turret.chain<float, 0x1F8>() += mouseMoveY;
+                if (*Ptr<u32>{ 0x558B80 }.offset(offset)) {
+                    auto const turret = Ptr<Ptr<Ptr<Struct, 0x114>, 0x58>>{ 0x558B4C }.offset(offset);
+                    if (*turret.chain<bool, 0xF3>()) {
+                        *turret.chain<float, 0x64>() += mouseMoveX;
+                        *turret.chain<float, 0x48>() += mouseMoveY;
+                    }
                 }
             }
             x = y = 0;
